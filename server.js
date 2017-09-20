@@ -22,7 +22,7 @@ var supervisorpayments = require('./routes/supervisorpayments');
 var materialstockentries = require('./routes/materialstockentries');
 var workdoneimages = require('./routes/workdoneimages');
 
-var port = 3001;
+var port = 5000;
 
 var app = express();
 
