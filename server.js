@@ -21,8 +21,9 @@ var workdoneentries = require('./routes/workdoneentries');
 var supervisorpayments = require('./routes/supervisorpayments');
 var materialstockentries = require('./routes/materialstockentries');
 var workdoneimages = require('./routes/workdoneimages');
+var oldmeterimages = require('./routes/oldmeterimages');
 
-var port = 5000;
+var port = 3001;
 
 var app = express();
 
@@ -75,6 +76,7 @@ app.use('/api', workdoneentries);
 app.use('/api', supervisorpayments);
 app.use('/api', materialstockentries);
 app.use('/api', workdoneimages);
+app.use('/api', oldmeterimages);
 
 app.listen(port, function(){
 
